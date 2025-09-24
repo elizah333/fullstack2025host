@@ -117,7 +117,7 @@ background: url("images/JAGUAR-bg.jpg") center/cover no-repeat;
 }
 .site-footer {
     font-family: arial, Helvetica, sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     background-color: #000;
     color: #ccc;
     padding: 2rem 1rem;
@@ -132,7 +132,7 @@ background: url("images/JAGUAR-bg.jpg") center/cover no-repeat;
   display:flex;
   justify-content: center;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding-top:1rem;
   flex-wrap: wrap;
@@ -206,7 +206,7 @@ text-decoration: none;
 .nav-menu summary {
   list-style: none;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #ddd;
   background: rgba(0,0,0,0.4);
   padding: 0.5rem 1rem;
@@ -219,7 +219,7 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   background: rgba(0,0,0,0.5);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-top: 0.5rem;
   padding: 1rem;
   border-radius: 6px;
@@ -259,8 +259,8 @@ text-decoration: none;
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 0.7rem;
-  gap: 7rem;
+  font-size: 0.9rem;
+  gap: 6rem;
   border-bottom: 1px solid #bababa;
   margin: 0 auto;
   box-sizing: border-box;
@@ -268,7 +268,7 @@ text-decoration: none;
 .inner-nav a {
   color: #000;
   text-decoration: none;
-  padding: 0.65rem 0;
+  padding: 0.7rem 0;
   display: inline-block;
 }
 .inner-nav a:hover, .inner-nav a:focus-visible {
@@ -305,6 +305,73 @@ text-decoration: none;
   margin: 0 auto;
   text-align:left;
   box-sizing: border-box;
-  font-size: 0.7rem;
+  font-size: 1rem;
   line-height: 1.5;
+}
+.content-box h1 {
+  text-align: center;
+
+}
+.content-box img.full-img {
+display: block;
+width: 100%;
+height: auto;
+border-radius: 8px;
+}
+.main-content-wrapper {
+  display: flex;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.sidebar-facts {
+  float: right;
+  width: 450px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+}
+.facts-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.7rem;
+}
+.facts-table td {
+  padding: 0.6rem 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: top;
+}
+.facts-table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+.facts-table strong {
+  color: #333;
+}
+.facts-table em {
+  font-style: italic;
+  color: #555;
+}
+.content-img {
+  float: left;
+  padding: 1rem;
+}
+.side-img {
+  float: right;
+  width: 300px;
+  border: 1px #ccc solid;
+  padding: 4px;
+  margin: 0 0 1rem 1.5rem;
+  text-align: center;
+}
+.content-figure {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+.side-img figcaption {
+font-size: 0.8rem;
+color: #555;
+margin-top: 0.5rem;
 }
