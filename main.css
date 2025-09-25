@@ -121,7 +121,7 @@ background: url("images/JAGUAR-bg.jpg") center/cover no-repeat;
     background-color: #000;
     color: #ccc;
     padding: 2rem 1rem;
-      text-align: center;
+    text-align: center;
 }
 .site-footer a {
     color: #ccc;
@@ -144,7 +144,7 @@ background: url("images/JAGUAR-bg.jpg") center/cover no-repeat;
 .footer-col {
   flex:1 1 250px;
   min-width: 250px;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   box-sizing: border-box;
 }
 .footer-col + .footer-col {
@@ -259,7 +259,7 @@ text-decoration: none;
   width: 100%;
   display: flex;
   justify-content: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   gap: 6rem;
   border-bottom: 1px solid #bababa;
   margin: 0 auto;
@@ -287,7 +287,7 @@ text-decoration: none;
 }
 .white-card {
   background: #fff;
-  max-width: 900px;
+  max-width: 1025px;
   width: 100%;
   flex: 1;
   margin: 2rem auto 0;
@@ -352,14 +352,11 @@ border-radius: 8px;
   font-style: italic;
   color: #555;
 }
-.content-img {
-  float: left;
-  padding: 1rem;
-}
 .side-img {
   float: right;
   width: 300px;
   border: 1px #ccc solid;
+  border-radius: 8px;
   padding: 4px;
   margin: 0 0 1rem 1.5rem;
   text-align: center;
@@ -368,10 +365,161 @@ border-radius: 8px;
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .side-img figcaption {
 font-size: 0.8rem;
 color: #555;
 margin-top: 0.5rem;
+}
+aside {
+  float: left;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 1.5rem 1rem 0;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-overlay {
+  position: absolute;
+  top: 50%; left: 8;
+  transform: translateY(-50%);
+  max-width: 45%;
+  color: #fff;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  border-radius: 6px;
+}
+.hero-overlay h1 {
+font-size: clamp(2rem, 4vw, 3rem);
+margin-bottom: 0.75rem;
+}
+.hero-overlay p {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+}
+.video-box {
+  position: absolute;
+  top: 14rem;
+  left: 44rem;
+  width: 57%;
+  aspect-ratio: 16/9;
+}
+.video-box iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.circle-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 750px;
+}
+.circle-card {
+  text-decoration: none;
+  width: 110px;
+  text-align: center;
+}
+.circle-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+  transition: transform .3s ease, box-shadow .3s ease; 
+}
+.circle-card span {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 999px;
+  line-height: 1.3;
+}
+.circle-card.box1 span { background: #5e8272; }
+.circle-card.box2 span { background: #6facde; }
+.circle-card.box3 span { background: #bb89ad; }
+.circle-card.box4 span { background: #c0a668; }
+.circle-card.box5 span { background: #68abba; }
+
+.circle-card:hover img, .circle-card:focus img {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+ul {
+  max-width: 100%;
+  height: 500px;
+  display: flex;
+  gap: 4vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  background: #e5e5e5;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+li {
+  list-style: none;
+  flex: 0 0 75%;
+  scroll-snap-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+}
+li img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+.gallery-title-box {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.gallery-title {
+  background: #e6b33d;
+  color: #fff;
+  padding: 0.4rem 3rem;
+  border-radius: 999px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+.fact-aside {
+  float: right;
+  width: 220px;
+  margin: 0 1rem 0;
+  background: #fff;
+  padding: 1rem 2rem;
+  border: 6px solid #e6b33d
+}
+.fact-heading {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #477661;
+  text-align: center;
 }
