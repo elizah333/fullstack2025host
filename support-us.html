@@ -10,7 +10,7 @@
       <header class="site-header">
   <a class="skip-link" href="#main">Skip to main content</a>
   <details class="nav-menu">
-    <summary aria-label="Main menu">☰ Menu</summary>
+    <summary aria-label="Main menu">☰</summary>
     <nav class="global-nav">
       <a href="index.html">Home</a>
       <a href="about-jaguars.html">About Jaguars</a>
@@ -27,12 +27,77 @@
       <a href="about-jaguars.html">About Jaguars</a>
       <a href="conservation.html">Conservation</a>
       <a href="take-action.html">Take Action</a>
-      <a href="support-us.html" class="active">Support Us</a>
+      <a href="support-us.html" aria-current="page">Support Us</a>
     </nav>
         <article class="content-box">
-            <p>
-                text
-            </p>
+            <div class="blog-title">
+              <h2> JAGUAR EDUCATION BLOGS</h2>
+            </div>
+            <div class="blog">
+              <div class="blog-card">
+                <h2>Urgent Need for more Rangers</h2>
+                <h5> They're tearing down the forests, 08/08/08</h5>
+                <img src="images/threats.jpg" class="fakeimg" loading="lazy">
+                <p> Here is the top 10 steps you can do to help!</p>
+                <p> Across the Amazon and other critical ecosystems, deforestation is accelerating 
+    at an alarming pace. Vast areas of primary forest are being cut down for 
+    agriculture, cattle ranching, and illegal logging. Rangers, often the first and... </p>
+              </div>
+              <div class="blog-card">
+                <h2>Jaguars Return to Amazon</h2>
+                <h5> Territory is shrinking, 07/07/07</h5>
+                <img src="images/roam.jpg" class="fakeimg" loading="lazy">
+                <p>What is the government doing about it?</p>
+                <p>    For the first time in decades, jaguar sightings in certain regions of the 
+    Amazon are becoming more frequent. Conservationists view this as a positive 
+    sign that habitats are slowly recovering. Jaguars play a vital role in keeping...</p>
+              </div>
+            </div>
+            <button id="view-more">View More</button>
+            <div class="sub-blog">
+              <h4>Subscribe for New Blog Updates</h4>
+            <input type="text" placeholder="Full Name" name="name" required>
+            <input type="text" placeholder="Email address" name="mail" required>
+            <input type="submit" value="Subscribe">
+          </div>
+          <div class="press-list">
+            <h2 id="press-title">Press Releases</h2>
+            <article class="press-item">
+              <img src="images/magazin.png" alt="Jaguar magazine cover" loading="lazy">
+              <div class="press-content">
+                <h2 id="redirect2"><a href="#">New Report Exposes Legal Gaps Facilitating the Illegal Jaguar Trade</a></h2>
+                <p class="date">08 May 2008</p>
+              </div>
+            </article>
+                        <article class="press-item">
+              <img src="images/magazin.png" alt="Jaguar magazine cover" loading="lazy">
+              <div class="press-content">
+                <h2><a href="#">Historic Reintroduction Effort in Brazil</a></h2>
+                <p class="date">12 Apr 2008</p>
+              </div>
+            </article>
+                        <article class="press-item">
+              <img src="images/magazin.png" alt="Jaguar magazine cover" loading="lazy">
+              <div class="press-content">
+                <h2><a href="#">New Research Highlight Urgent Need for more Rangers to Protect Jaguars</a></h2>
+                <p class="date">20 Mar 2008</p>
+              </div>
+            </article>
+            <button id="load-more">LOAD MORE</button>
+          </div>
+          <section class="contact-section">
+            <h2 id="contact-form">Contact Us</h2>
+            <form class="contact-form">
+              <div class="form-grid">
+                <input type="text" name="first-name" placeholder="First Name" required>
+                <input type="text" name="last-name" placeholder="Last Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+              </div>
+              <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+              <input type="submit" value="Send Message">
+            </form>
+          </section>
         </article>
         </section>
 </main>
