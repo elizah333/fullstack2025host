@@ -38,5 +38,5 @@ Min blogg section tycker jag var väldigt jobbigt att lämna den som den är. Ja
 På about jaguar sidan är min table lite konstigt på sidan i mobil vy, vet inte hur jag kan fixa det, inget funkar.
 Skulle vilja ha bättre palett färger.
 Min merch plushies section blev antingen för enkel/tråkig eller för mycket design element och de design element var svår att hålla t.ex. allt grön var för tjock eller tun på vissa delar. Gillar inte slut designen på den. 
-Av någon anledning är mina adopt lådor aligned lite till hover i mobil vy också, det förstår jag inte.
+Av någon anledning är mina adopt lådor aligned lite till höger i mobil vy också, det förstår jag inte.
 Bilder är inte optimerade. Troligen är min text storlek för liten och färg kontraster inte helt bra för alla användare. Clip path kan vara mer precis.
